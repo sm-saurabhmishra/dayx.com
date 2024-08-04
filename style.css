@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* ----------------------------------------------------------------navbar-------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363a3a;
+  color: rgb(251, 245, 245);
+  padding: 6px 20px;
+}
+/* -----------------------------------------------------------------------brand png----------------------------- */
+.brand {
+  font-size: 10px;
+  background-image: url('brand_tag.png');
+  background-size: cover; /* Adjust based on your needs */
+  background-position: center; 
+  width: 100px; /* Set width as needed */
+  height: 45px; /* Set height as needed */
+}
+/* ------------------------------------------------------------------------poster------------------------------------- */
+.poster{
+  background-image: url('poster.png');
+  background-size: cover; /* or contain, or specific dimensions */
+  background-repeat: no-repeat; /* to prevent the image from repeating */
+  background-position: center; /* to center the image */
+  /* width: 209vmin; */
+  height: 64vmin;
+}
+/* ------------------------------------------------------------------------menu .menu-btn------------------------------- */
+
+.menu-btn {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* --------------------------------------------------------------while .slide-menu------------------------------------------- */
+
+.slide-menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #111;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.slide-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.slide-menu a:hover {
+  background-color: #575757;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+main {
+  padding: 20px;
+}
+
+.menu-open .slide-menu {
+  left: 0;
+}
+
+.menu-open .overlay {
+  display: block;
+}

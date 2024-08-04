@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Slide Menu Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+        <div class="brand"></div>
+       
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <script>
+          document.querySelector('open menu');
+        </script>
+    </div>
+
+    <div id="slide-menu" class="slide-menu">
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms-conditions">Terms and Conditions</a>
+        <a href="#refund-policy">Refund Policy</a>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+<script>
+  function toggleMenu(){
+    document.body.classList.toggle('menu-open');
+    
+  }
+</script>
+
+  </nav>
+
+ <!-- --------------------------------------------------------------------------------poste--------------------------------- -->
+ <div class="poster"></div>
+
+
+
+
+
+
+
+ 
+</body>
+    <script src="script.js"></script>
+ 
+
+</html>
